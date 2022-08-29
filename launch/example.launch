@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+	<node pkg="rviz_template" type="usage_example.py" name="visual_rviz_node" output="screen"/>
+	<node pkg="rviz" type="rviz" name="rviz_node" args="-d $(find rviz_template)/rviz/rviz_config.rviz" />
+	<node name="rqt" pkg="rqt_graph" type="rqt_graph"/>	
+</launch>
